@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Tailwind CSS</title>
+</head>
+
+<body class="">
+    <!-- Header & Nav -->
+    <header class="w-full transparent h-14 text-white fixed flex justify-between px-8 py-3 items-center uppercase">
+        <div class="logo">
+            <a href="/index.html" class="font-md">Lushpath</a>
+        </div>
+
+        <ul class="flex justify-center items-center max-md:hidden">
+            <li><a class="active p-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#home">Home</a></li>
+            <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#about">About</a></li>
+            <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#faq">F.A.Q</a></li>
+            <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#partners">partners</a></li>
+            <li><a class="px-4 py-2 mx-3 rounded hover:bg-teal-500  shadow-md" href="#contact">contact us</a></li>
+        </ul>
+    </header>
+
+    <!-- Showcase section -->
+    <div id="home"
+        class="showcase flex justify-center items-center slide-in-right relative gradient-to-r from-teal-100 to-teal-200 h-screen text-center">
+        <div class="showcase-inner absolute">
+            <p class="uppercase text-5xl font-extrabold">Welcome to Lushpath</p>
+            <button class="bg-teal-600 text-white py-3 px-4 mt-8 shadow-md rounded hover:bg-teal-500"><a
+                    href="#about">About Us <i class="fas fa-user ml-2"></i></a></button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="h-screen"></section>
+    <!-- F.A.Q Section -->
+    <section id="faq" class="h-screen"></section>
+    <!-- Partners section -->
+    <section id="partners" class="h-screen"></section>
+    <!-- Contact section -->
+    <section id="contact" class="h-screen"></section>
+    
+
+    <script>
+        const nav = document.querySelector('header')
+        const btn = document.getElementById('menu-btn');
+        const menu = document.querySelector('.mobile-menu');
+        window.addEventListener('scroll', fixNav)
+        btn.addEventListener('click', navToggle)
+        function fixNav() {
+            if (window.scrollY > nav.offsetHeight + 250) {
+                nav.classList.add('active')
+            } else {
+                nav.classList.remove('active')
+            }
+        }
+    </script>
+</body>
+
+</html>
