@@ -5,27 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" style="border-radius: 50%;" >
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" style="border-radius: 50%;" >
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Tailwind CSS</title>
+    <title>Lushpath Official website</title>
 </head>
 
 <body class="">
     <!-- Header & Nav -->
-    <header class="w-full transparent h-14 text-white fixed flex justify-between p-9 items-center uppercase">
+    <header class="w-full transparent h-14 text-white fixed flex justify-between p-9 items-center uppercase z-10">
         <div class="logo">
             <a href="#home" class="text-2xl">Lushpath</a>
         </div>
 
         <ul class="flex justify-center items-center max-md:hidden">
-            <li><a class="active p-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#home"><i class="fas fa-home-alt ml-3"></i>Home </a></li>
-            <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#about">  <i class="fas fa-users ml-3"></i>About</a></li>
-            <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#faq"> <i class="fas fa-question-circle ml-3">F.A.Q </i></a></li>
-            <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#partners">  <i class="fas fa-handshake ml-3"></i>partners</a></li>
-            <li><a class="px-4 py-2 mx-3 rounded hover:bg-teal-500  shadow-md" href="#contact">  <i class="fas fa-envelope ml-3"></i>contact us</a></li>
+            <li><a class="active p-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#home"><i
+                        class="fas fa-home-alt mr-3"></i>Home </a></li>
+            <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#about"> <i
+                        class="fas fa-users mr-3"></i>About</a></li>
+            <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#faq"> <i
+                        class="fas fa-question-circle mr-3">F.A.Q </i></a></li>
+            <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#partners"> <i
+                        class="fas fa-handshake mr-3"></i>partners</a></li>
+            <li><a class="px-4 py-2 mx-3 rounded hover:bg-teal-500  shadow-md" href="#contact"> <i
+                        class="fas fa-envelope mr-3"></i>contact us</a></li>
         </ul>
     </header>
 
@@ -40,16 +49,58 @@
     </div>
 
     <!-- About Section -->
-    <section id="about" class="h-screen flex justify-center items-center">About</section>
+    <section id="about" class="h-screen w-full mt-7">
+        <div class="relative w-4/5 mx-auto flex py-5 items-center">
+            <div class="flex-grow  border-t border-teal-500"></div>
+            <span
+                class="flex-shrink font-bold mx-4 text-teal-500 px-5 py-3 rounded text-2xl hover:bg-teal-500 hover:text-white">About
+                Us <i class="fas fa-users"></i></span>
+            <div class="flex-grow border-t border-teal-500"></div>
+        </div>
+
+
+        <!-- Mian -->
+        <div class="flex about justify-between items-center mt-9 px-8 w-full h-80  slide-in-bottom duration-1000">
+
+            <div class="p-3 h-24 w-3/6">
+                <p class="leading-9 p-4 bg-white text-teal-500 tracking-wider shadow-2xl rounded-md z-10">
+                    We expertly manage the movement of goods on behalf of clients between specified sources and
+                    destinations, combining different transportation modes and types. To reduce their time-to-market,
+                    improve customer service and mitigate risk, we also work in partnership with our clients to
+                    integrate logistics functions in their end-to-end supply chain.
+                </p>
+            </div>
+            <div class="p-3 h-24 w-3/6 -translate-y-14 slide-in-bottom duration-1000">
+                <p class="leading-9 p-4 bg-white text-teal-500 tracking-wider shadow-2xl rounded-xl z-10">
+                    When the outsource relationship is fully mature, we act as the lead logistics provider (LLP),
+                    managing multiple supply chain functions on our clients’ behalf. Delivery is only one part of the
+                    logistics equation. In fact, it might not be the most important part. After all, what does it matter
+                    if a transport company can guarantee prompt delivery if they don’t have the right products in stock?
+                </p>
+            </div>
+            <div class="p-3 h-24 w-3/6 slide-in-bottom duration-1000">
+                <p class="leading-9 p-4 bg-white text-teal-500 tracking-wider shadow-2xl rounded-xl z-10">
+                    While internet sales are difficult to forecast, a talented logistician should stay on top of it, and
+                    be aware of selling patterns and inventory levels so items do not sell out. Unfortunately, many
+                    online sites have little or no experience with logistics, which is why their products are frequently
+                    out of stock. It's more established businesses that employ teams of logisticians.
+                </p>
+            </div>
+        </div>
+    </section>
     <!-- F.A.Q Section -->
     <section id="faq" class="h-screen flex justify-center items-center">FAQ</section>
     <!-- Partners section -->
-    <section id="partners" class="h-screen flex justify-center items-center text-teal-500">Partners</section>
+    <section id="partners" class="h-screen flex justify-center items-center text-teal-500">Partners
+
+
+
+    </section>
     <!-- Contact section -->
     <section id="contact" class="h-screen flex justify-center items-center">
-            Contact
+        Contact
     </section>
-    
+
 
     <script>
         const nav = document.querySelector('header')
