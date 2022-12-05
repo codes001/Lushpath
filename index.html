@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" style="border-radius: 50%;" >
-    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" style="border-radius: 50%;" >
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" style="border-radius: 50%;">
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" style="border-radius: 50%;">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -20,11 +20,15 @@
 <body class="">
     <!-- Header & Nav -->
     <header class="w-full transparent h-14 text-white fixed flex justify-between p-9 items-center uppercase z-10">
+        <input type="checkbox" id="check" hidden>
+        <label for="check" class="float-right text-white text-3xl mr-18 md:hidden md:text-4xl">
+            <i class="fas fa-bars"></i>
+        </label>
         <div class="logo">
             <a href="#home" class="text-2xl">Lushpath</a>
         </div>
 
-        <ul class="flex justify-center items-center max-md:hidden">
+        <ul class="flex justify-center items-center ">
             <li><a class="active p-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#home"><i
                         class="fas fa-home-alt mr-3"></i>Home </a></li>
             <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#about"> <i
@@ -97,8 +101,27 @@
 
     </section>
     <!-- Contact section -->
-    <section id="contact" class="h-screen flex justify-center items-center">
-        Contact
+    <section id="contact" class=" flex-col justify-center items-center h-screen">
+        <form class=" w-10/12 h-auto shadow-2xl rounded-xl flex-col mx-auto p-16">
+            <i class="fas fa-user mr-4 text-teal-600"></i> <label class="text-teal-600" for="name">Name</label>
+            <input class="w-full focus:outline-none bg-transparent border border-teal-600 border-solid rounded-md p-2 "
+                type="text" required>
+            <i class="fas fa-envelope mr-4 text-teal-600"></i> <label class="text-teal-600" for="email">Email</label>
+            <input class="w-full focus:outline-none bg-transparent border border-teal-600 border-solid rounded-md  p-2"
+                type="email" required>
+            <i class="fas fa-comment mr-4 text-teal-600"></i> <label class="text-teal-600" for="message">Message</label>
+            <textarea
+                class="w-full focus:outline-none h-20 bg-transparent border border-teal-600 border-solid rounded-md p-2"
+                rows="5"> </textarea>
+
+            <button class="bg-teal-600 text-white py-3 px-4 mt-8 shadow-md rounded hover:bg-teal-500"><a
+                    href="#about">Submit <i class="fas fa-upload ml-2"></i></a></button>
+        </form>
+
+        <!-- Google map -->
+        <div class="w-10/12 h-auto mx-auto my-16">
+            <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507365.3245602959!2d3.003759939153189!3d6.547977478301396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1670263311050!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
 
 
