@@ -93,7 +93,7 @@ section#contact {
 @media(max-width:500px){
   .about div {
     margin:230px 0;
-    transform: translateY(-200%);
+    transform: translateY(-210%);
 
   }
 }
