@@ -17,7 +17,7 @@
     <title>Lushpath Official website</title>
 </head>
 
-<body class="">
+<body class="h-auto">
     <!-- Header & Nav -->
     <header class="w-full transparent h-14 text-white fixed flex justify-between p-9 items-center uppercase z-10">
         <input type="checkbox" id="check" hidden>
@@ -28,13 +28,13 @@
             <a href="#home" class="text-2xl">Lushpath</a>
         </div>
 
-        <ul class="flex justify-center items-center ">
+        <ul class="flex justify-center items-center max-md:hidden">
             <li><a class="active p-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#home"><i
                         class="fas fa-home-alt mr-3"></i>Home </a></li>
             <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#about"> <i
                         class="fas fa-users mr-3"></i>About</a></li>
             <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#faq"> <i
-                        class="fas fa-question-circle mr-3">F.A.Q </i></a></li>
+                        class="fas fa-truck mr-3">what we do </i></a></li>
             <li><a class="px-4 py-2 mx-3 rounded shadow-md hover:bg-teal-500" href="#partners"> <i
                         class="fas fa-handshake mr-3"></i>partners</a></li>
             <li><a class="px-4 py-2 mx-3 rounded hover:bg-teal-500  shadow-md" href="#contact"> <i
@@ -53,7 +53,7 @@
     </div>
 
     <!-- About Section -->
-    <section id="about" class="h-screen w-full mt-7">
+    <section id="about" class="h-auto w-full  mt-7">
         <div class="relative w-4/5 mx-auto flex py-5 items-center">
             <div class="flex-grow  border-t border-teal-500"></div>
             <span
@@ -63,26 +63,10 @@
         </div>
 
 
-        <!-- Mian -->
-        <div class="flex about justify-between items-center mt-9 px-8 w-full h-80  slide-in-bottom duration-1000">
+        <!-- Main -->
+        <div class="flex about justify-between items-center mt-9 px-8 w-full h-auto max-md:flex-col items-between">
 
-            <div class="p-3 h-24 w-3/6">
-                <p class="leading-9 p-4 bg-white text-teal-500 tracking-wider shadow-2xl rounded-md z-10">
-                    We expertly manage the movement of goods on behalf of clients between specified sources and
-                    destinations, combining different transportation modes and types. To reduce their time-to-market,
-                    improve customer service and mitigate risk, we also work in partnership with our clients to
-                    integrate logistics functions in their end-to-end supply chain.
-                </p>
-            </div>
-            <div class="p-3 h-24 w-3/6 -translate-y-14 slide-in-bottom duration-1000">
-                <p class="leading-9 p-4 bg-white text-teal-500 tracking-wider shadow-2xl rounded-xl z-10">
-                    When the outsource relationship is fully mature, we act as the lead logistics provider (LLP),
-                    managing multiple supply chain functions on our clients’ behalf. Delivery is only one part of the
-                    logistics equation. In fact, it might not be the most important part. After all, what does it matter
-                    if a transport company can guarantee prompt delivery if they don’t have the right products in stock?
-                </p>
-            </div>
-            <div class="p-3 h-24 w-3/6 slide-in-bottom duration-1000">
+            <div class="p-3 h-24 w-3/6 max-md:w-full">
                 <p class="leading-9 p-4 bg-white text-teal-500 tracking-wider shadow-2xl rounded-xl z-10">
                     While internet sales are difficult to forecast, a talented logistician should stay on top of it, and
                     be aware of selling patterns and inventory levels so items do not sell out. Unfortunately, many
@@ -90,18 +74,34 @@
                     out of stock. It's more established businesses that employ teams of logisticians.
                 </p>
             </div>
+
+            <div class="p-3 h-24 w-3/6 max-md:w-full mb-10">
+                <p class="leading-9 p-4 bg-white text-teal-500 tracking-wider shadow-2xl rounded-md z-10">
+                    We expertly manage the movement of goods on behalf of clients between specified sources and
+                    destinations, combining different transportation modes and types. To reduce their time-to-market,
+                    improve customer service and mitigate risk, we also work in partnership with our clients to
+                    integrate logistics functions in their end-to-end supply chain.
+                </p>
+            </div>
+            <div class="p-3 h-24 w-3/6 max-md:w-full -translate-y-0">
+                <p class="leading-9 p-4 bg-white text-teal-500 tracking-wider shadow-2xl rounded-xl z-10">
+                    When the outsource relationship is fully mature, we act as the lead logistics provider (LLP),
+                    managing multiple supply chain functions on our clients’ behalf. Delivery is only one part of the
+                    logistics equation. In fact, it might not be the most important part. After all, what does it matter
+                    if a transport company can guarantee prompt delivery if they don’t have the right products in stock?
+                </p>
+            </div>
+            
         </div>
     </section>
     <!-- F.A.Q Section -->
-    <section id="faq" class="h-screen flex justify-center items-center">FAQ</section>
+    <section id="faq" class=" flex justify-center items-center">FAQ</section>
     <!-- Partners section -->
-    <section id="partners" class="h-screen flex justify-center items-center text-teal-500">Partners
-
-
+    <section id="partners" class=" flex justify-center items-center text-teal-500">Partners
 
     </section>
     <!-- Contact section -->
-    <section id="contact" class=" flex-col justify-center items-center h-screen">
+    <section id="contact" class=" flex-col justify-center items-center ">
         <form class=" w-10/12 h-auto shadow-2xl rounded-xl flex-col mx-auto p-16">
             <i class="fas fa-user mr-4 text-teal-600"></i> <label class="text-teal-600" for="name">Name</label>
             <input class="w-full focus:outline-none bg-transparent border border-teal-600 border-solid rounded-md p-2 "
@@ -120,10 +120,15 @@
 
         <!-- Google map -->
         <div class="w-10/12 h-auto mx-auto my-16">
-            <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507365.3245602959!2d3.003759939153189!3d6.547977478301396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1670263311050!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="w-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507365.3245602959!2d3.003759939153189!3d6.547977478301396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1670263311050!5m2!1sen!2sng"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-
+ <footer class="text-center text-white bg-teal-700 py-4">
+    <p>&copy;Lushpath 2022. All rights reserved.</p>
+ </footer>
 
     <script>
         const nav = document.querySelector('header')
