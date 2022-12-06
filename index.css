@@ -90,7 +90,13 @@ section#contact {
   padding-bottom: 100px;;
 }
 }
+@media(max-width:500px){
+  .about div {
+    margin:230px 0;
+    transform: translateY(-200%);
 
+  }
+}
 @keyframes slide-in-left {
   0% {
     left: -200%;
